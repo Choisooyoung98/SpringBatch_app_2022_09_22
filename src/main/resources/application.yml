@@ -1,0 +1,13 @@
+spring:
+  batch:
+    job:
+      names: ${job.name:helloWorldJob}
+    jdbc:
+      initialize-schema: ALWAYS
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/app_2022_09_22?serverTimezone=Asia/Seoul
+    username: root
+    password: 1067
+  jpa:
+    show-sql: true
